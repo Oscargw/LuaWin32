@@ -1,0 +1,26 @@
+{
+    "sourceFile": "luaWin32/luaWin32.cpp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1653551321188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653551327293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿// luaWin32.cpp : 此文件包含 \"main\" 函数。程序执行将在此处开始并结束。\r\n+// luaWin32.cpp : 此文件包含 \"main\" 函数。程序执行将在此处开始并结束。\r\n //\r\n \r\n #include <iostream>\r\n #include <stdio.h>\r\n"
+                },
+                {
+                    "date": 1653551335168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿// luaWin32.cpp : 此文件包含 \"main\" 函数。程序执行将在此处开始并结束。\r\n+// luaWin32.cpp : 此文件包含 \"main\" 函数。程序执行将在此处开始并结束。\r\n //\r\n \r\n #include <iostream>\r\n #include <stdio.h>\r\n"
+                }
+            ],
+            "date": 1653551321188,
+            "name": "Commit-0",
+            "content": "// luaWin32.cpp : 此文件包含 \"main\" 函数。程序执行将在此处开始并结束。\r\n//\r\n\r\n#include <iostream>\r\n#include <stdio.h>\r\n\r\nextern \"C\"\r\n{\r\n#include <lua.h>\r\n#include <lualib.h>\r\n#include <lauxlib.h>\r\n}\r\n\r\nint main()\r\n{\r\n    std::cout << \"Hello World!\\n\";\r\n\r\n    lua_State* L = luaL_newstate();\r\n    luaL_openlibs(L);\r\n\r\n    luaL_dostring(L, \"print('hello lua !!')\");\r\n    lual\r\n    lua_close(L);\r\n\r\n\r\n    std::cout << \"Bye Bye !!\\n\";\r\n    return;\r\n}\r\n"
+        }
+    ]
+}
