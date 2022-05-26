@@ -19,13 +19,13 @@ int main()
     lua_State* L = luaL_newstate();
     luaL_openlibs(L);
 
-    luaL_dostring(L, "print('hello lua !!')");
-    // luaL_dofile(L, "main.lua");
+    // luaL_dostring(L, "print('hello lua !!')");
+    luaL_dofile(L, "../lua/main.lua");
 
     lua_close(L);
 
 
-    std::cout << "Bye Bye !!\n";
+    std::cout << "\nBye Bye !!\n";
 
     system("pause");
 
